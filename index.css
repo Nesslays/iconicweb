@@ -1,0 +1,149 @@
+.{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+.menu-container{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.menu-toggle{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    z-index: 1000;
+    cursor: pointer;
+    font-size: 50px;
+    transition: transform 1.5s;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #232427;
+    box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 50%),
+    -2px -2px 2px 1px rgb(108 108 108 / 20%),
+    inset 2px 2px 2px 2px rgb(0 0 0 / 50%),
+    inset -2px -2px 2px 1px rgb(108 108 108 / 20%);
+    background-color: #131415;    
+
+}
+.menu-container li a{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    color: white;
+    border: 2px solid #232427;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.8s;
+    font-size: 30px;
+    text-decoration: none !important;
+    box-shadow: 1px 1px 2px 2px rgb(0 0 0 / 50%),
+    -2px -2px 2px 1px rgb(108 108 108 / 20%),
+    inset 1px 1px 2px 2px rgb(0 0 0 / 50%),
+    inset -2px -2px 2px 1px rgb(108 108 108 / 20%);
+
+
+}
+.menu-container li{
+    list-style: none;
+    position: absolute;
+    transform-origin: 200px;
+    transition: 0.8s;
+    left: 0;
+    transition-delay: calc(0.1s * var(--i));
+    transform: rotate(0deg) translateX(170px);
+     
+}
+.menu-container.active .menu-toggle{
+    transform: rotate(315deg);
+}
+.menu-container.active li{
+    transform: rotate(calc(365deg / 8 * var(--i)));
+} 
+.menu-container.active li:nth-of-type(5) a i{
+    transform: rotate(178deg);
+
+}
+.menu-container.active li:nth-of-type(6) a i{
+    transform: rotate(130deg);
+
+}
+.menu-container.active li:nth-of-type(7) a i{
+    transform: rotate(85deg);
+
+}
+.menu-container.active li:nth-of-type(3 ) a i{
+    transform: rotate(-90deg);
+
+}
+a.hover1 i{
+    text-shadow: 0 0 10px #ff00ad,
+                    0 0 25px #ff00ad,
+                    0 0 30px #ff00ad,
+                    0 0 35px #ff00ad,
+                    0 0 40px #ff00ad;
+}
+a.hover2 i{
+    text-shadow: 0 0 10px #0c8b0c,
+                    0 0 25px #00ff00,
+                    0 0 30px #00ff00,
+                    0 0 35px #00ff00,
+                    0 0 40px #00ff00;
+}
+a.hover3 i{
+    text-shadow: 0 0 10px #00fbff,
+                    0 0 25px #00fbff,
+                    0 0 30px #00fbff,
+                    0 0 35px #00fbff,
+                    0 0 40px #00fbff;
+}
+a.hover4 i{
+    text-shadow: 0 0 10px #006eff,
+                    0 0 25px #006eff,
+                    0 0 30px #006eff,
+                    0 0 35px #006eff,
+                    0 0 40px #006eff;
+}
+a.hover5 i{
+    text-shadow: 0 0 10px #ff00ad,
+                    0 0 25px #ff00ad,
+                    0 0 30px #ff00ad,
+                    0 0 35px #ff00ad,
+                    0 0 40px #ff00ad;
+}
+a.hover6 i{
+    text-shadow: 0 0 10px #0c8b0c,
+                    0 0 25px #0c8b0c,
+                    0 0 30px #0c8b0c,
+                    0 0 35px #0c8b0c,
+                    0 0 40px #0c8b0c;
+}
+a.hover7 i{
+    text-shadow: 0 0 10px #00fbff,
+                    0 0 25px #00fbff,
+                    0 0 30px #00fbff,
+                    0 0 35px #00fbff,
+                    0 0 40px #00fbff;
+}
+a.hover8 i{
+    text-shadow: 0 0 10px #006eff,
+                    0 0 25px #006eff,
+                    0 0 30px #006eff,
+                    0 0 35px #006eff,
+                    0 0 40px #006eff;
+}

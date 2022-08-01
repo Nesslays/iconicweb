@@ -16,31 +16,60 @@
         <div class="menu-toggle">
             <ion-icon name="aperture"></ion-icon>      
         </div>
-        <li>
+        <li style="--i:0" index="1" >
             <a href=""><i class="fas fa-home"></i></a>
         </li>
-        <li>
+        <li style="--i:1" index="2" >
             <a href=""><i class="fas fa-users"></i></a>
         </li>
-        <li>
+        <li style="--i:2" index="3" >
             <a href=""><i class="fas fa-envelope"></i></a>
         </li>
-        <li>
+        <li style="--i:3" index="4" >
             <a href=""><i class="fas fa-cogs"></i></a>
         </li>
-        <li>
+        <li style="--i:4" index="5" >
             <a href=""><i class="fas fa-save"></i></a>
         </li>
-        <li>
+        <li style="--i:5" index="6" >
             <a href=""><i class="fas fa-cart-plus"></i></a>
         </li>
-        <li>
+        <li style="--i:6" index="7" >
             <a href=""><i class="fas fa-cloud-upload-alt"></i></a>
         </li>
-        <li>
+        <li style="--i:7" index="8" >
             <a href=""><i class="fas fa-chart-pie"></i></a>
         </li>
+        
     </div>
+
+    <script>
+        $(document).ready(function(){
+            var menuExpanded = false;
+            $(".menu-toggle").click(function(){
+                if(!menuExpanded){
+                    $(".menu-container").addClass('active');
+
+                }
+                else{
+                    $(".menu-container").removeClass('active');
+                }
+                menuExpanded = !menuExpanded;
+            })
+            $(".menu-container li").hover(function(){
+                var index = $(this).attr('index');
+                $(this).find('a').addClass('hover'+index);
+
+            
+        });
+        $(".menu-container li").mouseleave(function(){
+                var index = $(this).attr('index');
+                $(this).find('a').removeClass('hover'+index);
+
+            
+        });
+    })
+    </script>
     
 </body>
 </html>
