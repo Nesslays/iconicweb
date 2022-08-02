@@ -68,6 +68,18 @@
 
             
         });
+        $(".menu-toggle").hover(function(){
+            $(".menu-container li").each(function(){
+                var index = $(this).attr('index');
+                $(this).find('a').addClass('hover'+index);    
+            });
+        });
+        $(".menu-toggle").click(function(){
+            $(".menu-container li").each(function(){
+                var index = $(this).attr('index');
+                $(this).find('a').removeClass ('hover'+index);    
+            });
+        });
     })
     </script>
     
