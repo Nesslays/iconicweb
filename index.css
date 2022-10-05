@@ -92,14 +92,14 @@ body{
 
 }
 a.hover1 i{
-    text-shadow: 0 0 10px #ff00ad,
+    text-shadow: 0 0 10px #ff0000,
                     0 0 25px #ff00ad,
                     0 0 30px #ff00ad,
                     0 0 35px #ff00ad,
                     0 0 40px #ff00ad;
 }
 a.hover2 i{
-    text-shadow: 0 0 10px #0c8b0c,
+    text-shadow: 0 0 10px #00ff00,
                     0 0 25px #00ff00,
                     0 0 30px #00ff00,
                     0 0 35px #00ff00,
